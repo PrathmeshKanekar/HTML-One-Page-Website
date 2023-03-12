@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment Flex Layout</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      header {
+        background-color: aqua;
+        text-align: center;
+        padding: 20px;
+      }
+      nav {
+        background-color: chocolate;
+        padding: 20px;
+        /* max-width: auto; */
+      }
+      ul {
+        list-style: none;
+      }
+      li {
+        display: inline;
+      }
+      li a {
+        text-decoration: none;
+        font-size: large;
+        color: white;
+        padding: 10px;
+      }
+      .imgfull img {
+        width: 100%;
+        height: 200px;
+      }
+      section {
+        display: flex;
+        margin: 10px;
+      }
+      .flex1 {
+        flex: 3;
+        background-color: blanchedalmond;
+        height: 200px;
+        text-align: center;
+        padding-top: 50px;
+        margin-left: 8px;
+      }
+      .flex2 {
+        flex: 3;
+        background-color: blanchedalmond;
+        height: 200px;
+        text-align: center;
+        padding-top: 50px;
+        margin-left: 8px;
+      }
+      .flex3 {
+        flex: 3;
+        background-color: blanchedalmond;
+        height: 200px;
+        text-align: center;
+        padding-top: 50px;
+        margin-left: 8px;
+      }
+      article {
+        display: flex;
+      }
+
+      footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        height: 80px;
+        padding: 30px;
+      }
+      .article1 {
+        flex: 2;
+        margin: 10px;
+      }
+      aside {
+        display: flex;
+      }
+      .aside1 {
+        flex: 2;
+        margin: 10px;
+      }
+      @media (max-width: 600px) {
+        section,
+        article,
+        aside,
+        footer {
+          flex-direction: column;
+        }
+        li {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- ***** use 1st layout element:- header *****-->
+    <header>
+      <h1>Assignment</h1>
+    </header>
+    <!-- ************************* -->
+
+    <!-- ***** use 2nd layout element:- nav *****-->
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="#imgdes">Image Description</a></li>
+        <li><a href="#goolemap">Google Map</a></li>
+      </ul>
+    </nav>
+    <!-- ************************* -->
+
+    <!-- ***** use 6th layout element:- div *****-->
+    <div class="imgfull">
+      <img src="assets/image/img1.webp" alt="image" />
+    </div>
+    <!-- ************************* -->
+
+    <!-- ***** use 3rd layout element:- section *****-->
+    <section id="imgdes">
+      <div class="flex1">
+        <h2>Image Description</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit,
+          ducimus!
+        </p>
+      </div>
+      <div class="flex2">
+        <h2>Image Description</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+          molestias.
+        </p>
+      </div>
+      <div class="flex3">
+        <h2>Image Description</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, iure?
+        </p>
+      </div>
+    </section>
+    <!-- ************************* -->
+
+    <!-- ***** use 4th layout element:- article *****-->
+    <article id="goolemap">
+      <div class="article1">
+
+        <iframe
+          width="100%"
+          height="415"
+          src="https://www.youtube.com/embed/jD3sXRz0CvE"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+      </div>
+      <div class="article1">
+
+        <iframe
+          width="100%"
+          height="415"
+          src="https://www.youtube.com/embed/v0rr-M0WfpM"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+      </div>
+    </article>
+    <!-- ************************* -->
+
+    <!-- ***** use 5th layout element:- aside *****-->
+    <aside>
+      <div class="aside1">
+        <iframe
+          src="profileform.html"
+          frameborder="0"
+          width="100%"
+          height="415"
+        ></iframe>
+      </div>
+
+      <div class="aside1">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.6172662768718!2d74.24035794920029!3d16.696025188439926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1018ba29427eb%3A0xba4bc267ad1f3ce7!2siGAP%20Education%20Private%20Limited!5e0!3m2!1sen!2sin!4v1674035329745!5m2!1sen!2sin"
+          width="100%"
+          height="415"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </aside>
+    <!-- ************************* -->
+
+    <!-- ***** use 7th layout element:- footer *****-->
+    <footer>
+      <h3>Footer</h3>
+    </footer>
+    <!-- ************************* -->
+    
+  </body>
+</html>
